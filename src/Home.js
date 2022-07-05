@@ -1,18 +1,17 @@
-import { useSelector } from "react-redux";
-import {useDispatch} from 'react-redux'
-import { depedecriment } from './action/action';
-import { depeIncriment } from './action/action';
-
+import { Button , Form } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux';
+import './App.css'
+import { decriment, incriment } from './fucher/counter';
 function Home(){
-    const mystore =useSelector(state => state.incrimentDecriment)
-    const dispatch=useDispatch()
-    console.log(mystore)
+    const count =useSelector((state)=>state.counter.count)
+    console.log(count)
+    const dispatech=useDispatch()
     return(
-        <>
-            <button onClick={()=>dispatch(depeIncriment())}>+</button>
-            <input type='text' value={mystore} />
-            <button onClick={()=> dispatch(depedecriment())}>-</button>
-        </>
+        <div className="incri-dicri-crad">
+            <Button onClick={()=>dispatech(incriment())}>+</Button>
+            <Form.Control type='numbar' value={count}></Form.Control>
+            <Button onClick={()=>dispatech(decriment())}>-</Button>
+        </div>
     )
 }
 export default Home;

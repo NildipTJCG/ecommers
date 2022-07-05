@@ -12,6 +12,17 @@
   text-decoration: none;
 }
 
+.incri-dicri-crad{
+  display: flex !important;
+  width: 30%;
+  padding: 10px;
+}
+.incri-dicri-crad button{
+  margin: 0 5px;
+}
+.incri-dicri-crad input{
+  text-align: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
