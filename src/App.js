@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Home';
-import About from './About';
-import Contect from './Contect';
-import Blog from './Blog';
-import {Header} from './Navbardeatils';
-import { Route, Routes } from 'react-router-dom';
+import "./App.css";
+import Home from "./Home";
+import About from "./About";
+import Contect from "./Contect";
+import Blog from "./Blog";
+import { Header } from "./Navbardeatils";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
