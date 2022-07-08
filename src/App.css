@@ -17,10 +17,16 @@
   width: 30%;
   padding: 10px;
 }
+
 .incri-dicri-crad button{
   margin: 0 5px;
 }
+
 .incri-dicri-crad input{
+  text-align: center;
+}
+
+.form-control{
   text-align: center;
 }
 @media (prefers-reduced-motion: no-preference) {

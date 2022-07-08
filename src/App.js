@@ -5,11 +5,13 @@ import Contect from "./Contect";
 import Blog from "./Blog";
 import { Header } from "./Navbardeatils";
 import { Route, Routes } from "react-router-dom";
+import Apiaxios from "./Apiaxios";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Apiaxios />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
